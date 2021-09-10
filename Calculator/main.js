@@ -6,13 +6,15 @@ const path = require('path')
 // modify your existing openApplication() function
 function openApplication () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 700,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
+  win.setAutoHideMenuBar(true)
+  win.setMenuBarVisibility(false)
   win.loadFile('./dist/public/index.html')
 }
 
