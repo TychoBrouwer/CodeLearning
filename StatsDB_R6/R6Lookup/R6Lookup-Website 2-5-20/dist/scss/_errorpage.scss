@@ -1,0 +1,25 @@
+.main-error-page {
+    background: none !important;
+    text-align: center;
+    color: #000;
+
+    h1 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+
+        .link-homepage {
+            a {
+                text-decoration: none;
+                color: #007eff;
+            }
+        }
+    }
+}

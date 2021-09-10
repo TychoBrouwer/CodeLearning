@@ -1,0 +1,494 @@
+/* GRADIENT COLORS
+#008e32, #029315, #129904, #389f06, #5fa509, #88ab0b, #b1b00e, #b79011, #bd6f15, #c34d18, #c92a1c */
+$primary-color: #101010;
+$darker-color: #181818;
+$darkest-color: #121212;
+$lighter-color: #666;
+$secundary-color: #ff8800;
+$text-color: #d3d3d3;
+$background-color: #1c1c1c;
+$windows-color: #00a2ed;
+$psn-color: #006fcd;
+$xbl-color: #0e7a0d;
+$error-color: #d8000c;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	font-family: 'Overpass', sans-serif;
+	background: $background-color url('../img/background.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+
+	.header-nav {
+		padding: 0 8px;
+		background-color: $primary-color;
+
+		.main-nav {
+			.close-search-bar,
+			.github,
+			.search,
+			.search-bar {
+				font-size: 18px;
+				float: right;
+			}
+
+			a {
+				text-decoration: none;
+				display: inline-block;
+				color: $text-color;
+				height: 60px;
+				padding: 0 12px;
+				line-height: 65px;
+				font-size: 20px;
+				transition: ease-in-out 0.1s;
+
+				&:hover {
+					background-color: lighten($color: $primary-color, $amount: 4);
+				}
+			}
+
+			.close-search-bar,
+			.search {
+				cursor: pointer;
+				display: inline-block;
+				color: $text-color;
+				height: 60px;
+				padding: 0 12px;
+				line-height: 65px;
+				font-size: 18px;
+
+				&:hover {
+					background-color: lighten($color: $primary-color, $amount: 4);
+				}
+			}
+
+			.search {
+				padding-left: 10px;
+
+				i {
+					margin: 2px 0 0 2px;
+				}
+			}
+
+			.hide-search-bar {
+				display: none;
+			}
+
+			.close-search-bar {
+				width: 48px;
+			}
+
+			.search-bar {
+				form {
+					table {
+						width: 100%;
+						border-collapse: collapse;
+
+						.platformbox {
+							height: 60px;
+							width: 40px;
+							text-align: center;
+							color: $lighter-color;
+
+							.radio {
+								display: inline-block;
+								cursor: pointer;
+
+								input {
+									display: none;
+									transition: ease-in-out 0.1s;
+
+									&:checked + span.uplay {
+										transition: ease-in-out 0.1s;
+										background-color: $windows-color;
+										color: $text-color;
+										box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+									}
+
+									&:checked + span.psn {
+										transition: ease-in-out 0.1s;
+										background-color: $psn-color;
+										color: $text-color;
+										box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+									}
+
+									&:checked + span.xbl {
+										transition: ease-in-out 0.1s;
+										background-color: $xbl-color;
+										color: $text-color;
+										box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+									}
+
+									&:hover + span {
+										transition: ease-in-out 0.1s;
+										background-color: lighten($color: $primary-color, $amount: 4);
+									}
+								}
+
+								span {
+									margin-right: 3px;
+									height: 40px;
+									width: 40px;
+									padding-top: 10px;
+									border-radius: 10px;
+								}
+							}
+						}
+
+						.search-player-input {
+							background-color: transparent;
+							width: 100%;
+							border: none;
+							height: 40px;
+							padding: 0 10px 0 16px;
+							color: $text-color;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-page {
+		max-width: 1400px;
+		width: 96%;
+		margin: 0 auto;
+
+		.rainbowsix-logo {
+			margin-top: 15vh;
+			margin-bottom: 5vh;
+			height: 20vh;
+			background: url('../img/rainbowsix-logo.png') no-repeat center center;
+		}
+
+		.content {
+			display: flex;
+
+			.container-left {
+				padding: 0 8px;
+				float: left;
+				width: 20%;
+				margin-bottom: 10px;
+				text-decoration: none;
+				color: $text-color;
+
+				.header-container-left {
+					border-radius: 15px 15px 0 0;
+					width: 100%;
+					overflow: hidden;
+					height: 40px;
+					background-color: $primary-color;
+
+					h2 {
+						height: 40px;
+						width: 100%;
+						font-size: 16px;
+						font-weight: normal;
+						padding-top: 10px;
+						padding-left: 16px;
+					}
+				}
+
+				.content-container-left {
+					padding: 10px;
+					background: rgba($color: $darker-color, $alpha: 0.99);
+					min-height: 50px;
+					color: #666;
+
+					p {
+						line-height: 1.3rem;
+						font-size: 13px;
+					}
+				}
+			}
+
+			.container-center {
+				height: calc(60vh - 180px);
+				width: 60%;
+				vertical-align: top;
+				padding: 0 8px;
+
+				.searchbox {
+					height: 50px;
+					width: 100%;
+					margin-bottom: 10px;
+					overflow: hidden;
+					background: $primary-color;
+					border-radius: 15px;
+
+					form {
+						table {
+							width: 100%;
+							border-collapse: collapse;
+
+							.platformbox {
+								height: 36px;
+								width: 36px;
+								padding-top: 7px;
+								text-align: center;
+								color: $lighter-color;
+
+								.radio {
+									display: inline-block;
+									cursor: pointer;
+
+									input {
+										display: none;
+										transition: ease-in-out 0.1s;
+
+										&:checked + span.uplay {
+											transition: ease-in-out 0.1s;
+											background-color: $windows-color;
+											color: $text-color;
+											box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+										}
+
+										&:checked + span.psn {
+											transition: ease-in-out 0.1s;
+											background-color: $psn-color;
+											color: $text-color;
+											box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+										}
+
+										&:checked + span.xbl {
+											transition: ease-in-out 0.1s;
+											background-color: $xbl-color;
+											color: $text-color;
+											box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+										}
+
+										&:hover + span {
+											transition: ease-in-out 0.1s;
+											background-color: lighten($color: $primary-color, $amount: 4);
+										}
+									}
+
+									span {
+										margin-right: 5px;
+										height: 36px;
+										width: 36px;
+										padding-top: 10px;
+										border-radius: 8px;
+									}
+								}
+							}
+
+							.platformbox-xbl {
+								padding-right: 15px;
+							}
+
+							.search-player-div {
+								margin-right: 20px;
+
+								.search-player-input {
+									width: 100%;
+									background: $primary-color;
+									border: none;
+									height: 40px;
+									padding-top: 4px;
+									padding-left: 20px;
+									color: $text-color;
+									font-size: 20px;
+								}
+							}
+						}
+					}
+				}
+
+				.results {
+					margin-bottom: 10px;
+					overflow: hidden;
+					border-radius: 15px 15px 0 0;
+
+					.h2-results {
+						background-color: $primary-color;
+
+						h2 {
+							height: 40px;
+							color: $text-color;
+							font-size: 16px;
+							font-weight: normal;
+							padding-top: 10px;
+							padding-left: 16px;
+						}
+					}
+
+					.players {
+						a {
+							text-decoration: none;
+							color: $text-color;
+
+							.playerstats {
+								.rank-logo {
+									img {
+										width: 100%;
+									}
+								}
+								padding: 10px;
+								cursor: pointer;
+								display: flex;
+								transition: ease-in-out 0.1s;
+								background: rgba($color: $darker-color, $alpha: 0.99);
+
+								&:hover {
+									background-color: $darkest-color;
+								}
+
+								.rank-logo {
+									width: 40px;
+									height: 40px;
+									margin-right: 8px;
+								}
+
+								.stats {
+									margin-left: 8px;
+
+									.prev-stats {
+										font-size: 14px;
+										display: flex;
+
+										.kd,
+										.level,
+										.rank {
+											padding-right: 8px;
+										}
+
+										p {
+											.aternate-text {
+												color: #666;
+											}
+										}
+									}
+								}
+
+								.hackerprob-div {
+									margin: 10px 5px 10px auto;
+									padding: 0;
+									height: 20px;
+									border: 4px solid rgba(178, 178, 178,0.4);
+									border-radius: 6px;
+									background-color: transparent;
+									overflow: hidden;
+									position: relative;
+									width: 20vw;
+									max-width: 200px;
+
+									#hackerprob {
+										position: relative;
+										box-sizing: border-box;
+										width: 0;
+										border-radius: 2px;
+										background-color: #FFFF00;
+										height: 100%;
+										transition: border-radius 0.1s,width 0.8s,background-color 2s;
+									}
+								}
+							}
+						}
+
+						.error-message {
+							padding: 10px;
+							transition: ease-in-out 0.1s;
+							color: $error-color;
+							background: rgba($color: $darker-color, $alpha: 0.99);
+							height: 60px;
+							font-size: 16px;
+
+							h4 {
+								padding-left: 7px;
+							}
+
+							p {
+								padding-left: 6px;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+
+			.container-right {
+				padding: 0 8px;
+				float: right;
+				width: 20%;
+				margin-bottom: 10px;
+				text-decoration: none;
+				color: $text-color;
+
+				.header-container-right {
+					border-radius: 15px 15px 0 0;
+					width: 100%;
+					overflow: hidden;
+					height: 40px;
+					background-color: $primary-color;
+
+					h2 {
+						height: 40px;
+						width: 100%;
+						font-size: 16px;
+						font-weight: normal;
+						padding-top: 10px;
+						padding-left: 16px;
+					}
+				}
+
+				.content-container-right {
+					padding: 10px;
+					background: rgba($color: $darker-color, $alpha: 0.99);
+					min-height: 50px;
+					color: #666;
+
+					p {
+						line-height: 1.3rem;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		color: $text-color;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 120px;
+		background-color: $primary-color;
+
+		.footer-content {
+			margin: 0 auto;
+			padding: 20px 8px;
+
+			.footer-ul {
+				padding: 0 12px;
+
+				.footer-li {
+					text-align: right;
+					list-style: none;
+					font-size: 14px;
+
+					a {
+						color: $text-color;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.trademark {
+				color: $lighter-color;
+				font-size: 11px;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+body {
+    .cookiealert {
+        color: $text-color;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        height: 50px;
+        text-align: center;
+        display: none;
+        transform: translateY(100%);
+        transition: all 500ms ease-out;
+        color: #ecf0f1;
+        background: #171717 url('../img/cubes.webp');
+
+        &.show {
+            display: block;
+            transform: translateY(0%);
+            transition-delay: 1000ms;
+        }
+
+        .cookiealert-container {
+            height: 24px;
+            padding-top: 13px;
+
+            a {
+                text-decoration: underline;
+                color: #007bff;
+            }
+
+            .acceptcookies {
+                padding: 5px 8px;
+                color: $text-color;
+                margin-left: 10px;
+                text-decoration: none;
+                border-radius: 0.2rem;
+                cursor: pointer;
+                background-color: #0069d9;
+                vertical-align: baseline;
+                border: 0;
+            }
+        }
+    }
+}

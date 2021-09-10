@@ -1,0 +1,25 @@
+@media (max-width: 1280px) {
+    body {
+        background: $background-color url("https://www.r6lookup.com/dist/img/background/background1280.webp") no-repeat center center;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1920px) {
+    body {
+        background: $background-color url("https://www.r6lookup.com/dist/img/background/background1920.webp") no-repeat center center;
+    }
+}
+@media (min-width: 1921px) and (max-width: 2560px) {
+    body {
+        background: $background-color url("https://www.r6lookup.com/dist/img/background/background2560.webp") no-repeat center center;
+    }
+}
+@media (min-width: 2561px) and (max-width: 3840px) {
+    body {
+        background: $background-color url("https://www.r6lookup.com/dist/img/background/background3840.webp") no-repeat center center;
+    }
+}
+@media (min-width: 3841px) and (max-width: 7680px) {
+    body {
+        background: $background-color url("https://www.r6lookup.com/dist/img/background/background7680.webp") no-repeat center center;
+    }
+}

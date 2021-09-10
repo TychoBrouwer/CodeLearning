@@ -1,0 +1,27 @@
+@import "scsstemplates/_utils.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	button:focus,
+	input:focus,
+	select:focus,
+	textarea:focus {
+		outline: none;
+	}
+}
+
+body {
+    font-family: "Montserrat",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif ;
+	background-attachment: fixed;
+	background-size: cover;
+    overflow-y: scroll;
+}
+
+@import "scsstemplates/_header.scss";
+@import "scsstemplates/_mainaboutpage.scss";
+@import "scsstemplates/_footer.scss";
+@import "scsstemplates/_cookiealert.scss";
+@import "scsstemplates/_mediaqueries.scss";

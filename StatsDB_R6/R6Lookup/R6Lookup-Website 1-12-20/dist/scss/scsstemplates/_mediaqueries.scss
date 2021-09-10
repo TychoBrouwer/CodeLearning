@@ -1,0 +1,808 @@
+@media (max-width: 1280px), (max-height: 720px) {
+    body {
+        @supports not (background-image: url("/dist/img/background/background1280.webp")) {
+            background: url("/dist/img/background/background1280.jpg") $background-color no-repeat center 0 fixed;
+        }
+        @supports (background-image: url("/dist/img/background/background1280.webp")) {
+            background: url("/dist/img/background/background1280.webp") $background-color no-repeat center 0 fixed;
+        }
+    }
+}
+@media (min-width: 1281px) and (max-width: 1920px), (min-height: 721px) and (max-height: 1080px) {
+    body {
+        @supports not (background-image: url("/dist/img/background/background1920.webp")) {
+            background: url("/dist/img/background/background1920.jpg") $background-color no-repeat center 0 fixed;
+        }
+        @supports (background-image: url("/dist/img/background/background1920.webp")) {
+            background: url("/dist/img/background/background1920.webp") $background-color no-repeat center 0 fixed;
+        }
+    }
+}
+@media (min-width: 1921px) and (max-width: 2560px), (min-height: 1081px) and (max-height: 1440px) {
+    body {
+        @supports not (background-image: url("/dist/img/background/background2560.webp")) {
+            background: url("/dist/img/background/background2560.jpg") $background-color no-repeat center 0 fixed;
+        }
+        @supports (background-image: url("/dist/img/background/background2560.webp")) {
+            background: url("/dist/img/background/background2560.webp") $background-color no-repeat center 0 fixed;
+        }
+    }
+}
+@media (min-width: 2561px) and (max-width: 3840px), (min-height: 1441px) and (max-height: 2160px) {
+    body {
+        @supports not (background-image: url("/dist/img/background/background3840.webp")) {
+            background: url("/dist/img/background/background3840.jpg") $background-color no-repeat center 0 fixed;
+        }
+        @supports (background-image: url("/dist/img/background/background3840.webp")) {
+            background: url("/dist/img/background/background3840.webp") $background-color no-repeat center 0 fixed;
+        }
+    }
+}
+@media (min-width: 3841px), (min-height: 2161px) {
+    body {
+        @supports not (background-image: url("/dist/img/background/background7680.webp")) {
+            background: url("/dist/img/background/background7680.jpg") $background-color no-repeat center 0 fixed;
+        }
+        @supports (background-image: url("/dist/img/background/background7680.webp")) {
+            background: url("/dist/img/background/background7680.webp") $background-color no-repeat center 0 fixed;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        .header-nav {
+            .main-nav {
+                .logo {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 35%;
+                    max-width: 180px;
+
+                    img {
+                        margin-top: 0;
+                        width: 100%;
+                    }
+                }
+
+                .region-select {
+                    width: 65%;
+                    max-width: 280px;
+
+                    form {
+                        table {
+                            .regionbox {
+                                width: 33.33%;
+
+                                .radio {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .about {
+                    display: none;
+                }
+
+                .search {
+                    display: none;
+                }
+            }
+        }
+
+        .main-index-page {
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                flex-direction: column;
+
+                .container-left {
+                    width: 50%;
+                    grid-column: 1 / span 2;
+                    grid-row: 2 / 3;
+                }
+
+                .container-center {
+                    height: auto;
+                    width: 100%;
+                    grid-column: 1 / span 3;
+                    grid-row: 1 / 2;
+                }
+
+                .container-right {
+                    float: none;
+                    width: 100%;
+                    grid-column: 2 / span 3;
+                    grid-row: 2 / 3;
+                    padding-right: 8px;
+                    min-height: 298px;
+
+                    .content-container-right {
+                        .social {
+                            padding-top: 40px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-player-page {
+            .player-showcase {
+                .left-content {
+                    width: 60%;
+                    padding-right: 10px;
+
+                    .profile-pic-div {
+                        margin: auto 7%;
+                        height: auto;
+
+                        .profile-pic {
+                            width: 100%;
+                        }
+                    }
+
+                    .profile {
+                        h3 {
+                            font-size: 15px;
+                        }
+
+                        .username {
+                            h1 {
+                                font-size: 22px;
+
+                                .usertag-developer {
+                                    line-height: 24px;
+                                    font-size: 11px;
+                                }
+
+                                .usertag-supporter {
+                                    line-height: 24px;
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+
+                        .playerid {
+                            p {
+                                font-size: 13px;
+                            }
+
+                            button {
+                                margin-top: 7px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .right-content {
+                    width: 33%;
+
+                    .playerbar-div {
+                        .hackerprob-div {
+                            width: 100%;
+                            margin: 10px 0;
+
+                            .hackerbar-p {
+                                width: 100%;
+                            }
+                        }
+
+                        .lootboxprob-div {
+                            margin: 10px 0;
+                            width: 100%;
+
+                            .lootboxprob-p {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .basic-stats {
+                        margin: 8px;
+                        width: 100%;
+
+                        .level-div,
+                        .time-played-div,
+                        .current-mmr-div {
+                            font-size: 12px;
+                            height: 18px;
+
+                            .level,
+                            .time-played,
+                            .current-mmr {
+                                font-size: 9px;
+                                width: 42.5%;
+                                min-width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main-stats {
+                margin-bottom: 100px;
+
+                .player-stats {
+                    #overview-stats-tab {
+                        .overview-stats-content {
+                            .content-left {
+                                width: 38%;
+
+                                .ranks-overview {
+                                    .current-season {
+                                        .season-name {
+                                            p {
+                                                font-size: 12px;
+                                            }
+                                        }
+
+                                        .rank {
+                                            .current-rank-img {
+                                                width: 50px;
+                                                padding: 0 5px;
+
+                                                img {
+                                                    padding: 0;
+                                                    width: 50px;
+                                                    height: 50px;
+                                                    margin: 20px 0;
+                                                }
+                                            }
+
+                                            .current-rank-info {
+                                                p {
+                                                    font-size: 13px;
+
+                                                    span {
+                                                        font-size: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .season {
+                                        .rank {
+                                            .rank-img {
+                                                img {
+                                                    padding: 0;
+                                                    height: 50px;
+                                                    width: 50px;
+                                                }
+                                            }
+
+                                            .rank-info {
+                                                font-size: 13px;
+
+                                                span {
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .content-right {
+                                width: 65%;
+
+                                .overview-stats {
+
+                                }
+
+                                .gamemode-stats {
+                                    display: block;
+
+                                    .ranked-stats {
+                                        margin-right: 0;
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .casual-stats {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #pvp-stats {
+                        .content {
+                            .flex-content {
+                                display: block;
+                                margin-bottom: 20px;
+
+                                .left-content {
+                                    width: 100%;
+
+                                    .top-content-box {
+                                        display: flex;
+
+                                        .ranked-stats {
+                                            width: 100%;
+                                        }
+
+                                        .casual-stats {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .overview-stats {
+                                        width: calc(62% - 20px);
+                                    }
+                                }
+
+                                .right-content {
+                                    margin-left: 0;
+                                    width: 38%;
+                                    margin-left: 62%;
+                                    margin-top: -460px;
+
+                                    .def-stats-1col {
+                                        .def-stat-1col:nth-child(4) {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                .content-bottom {
+                                    flex-wrap: wrap;
+
+                                    .bomb-stats,
+                                    .secure-stats,
+                                    .hostage-stats {
+                                        width: calc(50% - 10px);
+                                    }
+
+                                    .bomb-stats,
+                                    .secure-stats {
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .hostage-stats {
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #pve-stats {
+                        .content {
+                            .flex-content {
+                                .left-content {
+                                    width: 62%;
+
+                                    .overview-stats {
+                                        .def-stats-4col {
+                                            .def-stat-4col:nth-child(n + 18) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .right-content {
+                                    width: calc(38% - 20px);
+                                    margin-left: 20px;
+
+                                    .def-stats-1col {
+                                        padding-bottom: 150px;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                .content-bottom {
+                                    flex-wrap: wrap;
+
+                                    .bomb-stats,
+                                    .classic-stats,
+                                    .hostage-rescue-stats,
+                                    .hostage-defense-stats {
+                                        width: calc(50% - 10px);
+                                        margin: 0;
+                                    }
+
+                                    .bomb-stats,
+                                    .hostage-rescue-stats {
+                                        margin-right: 10px;
+                                    }
+
+                                    .classic-stats,
+                                    .hostage-defense-stats {
+                                        margin-left: 10px;
+                                    }
+
+                                    .bomb-stats,
+                                    .classic-stats {
+                                        margin-bottom: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .season-stats {
+
+                }
+
+                .operator-stats {
+                    .operator-table {
+                        thead {
+                            tr {
+                                th {
+                                    width: calc(80% / 6);
+                                    font-size: 12px;
+
+                                    &:nth-child(1) {
+                                        width: 20%
+                                    }
+                                }
+
+                                .operator-kills-th,
+                                .operator-death-th {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            .operator-tr {
+                                td {
+                                    width: calc(80% / 6);
+                                    font-size: 12px;
+
+                                    p {
+                                        font-size: 12px;
+                                    }
+
+                                    &:first-child {
+                                        width: 20%;
+
+                                        p {
+                                            padding-left: 0;
+                                        }
+                                    }
+
+                                    &:last-child {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .operator-kills,
+                                .operator-death {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-about-page {
+            .about-text {
+                .about-disclamer {
+                    text-align: center;
+                }
+                .about-content {
+                    display: block;
+
+                    p {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .bars {
+                        margin: 0 auto;
+
+                        .hackerprob-div {
+                            margin: 10px 0 10px;
+                        }
+
+                        .lootboxprob-div {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .id-copy {
+                        margin: 0 auto;
+                        padding: 10px 0 15px;
+                    }
+
+                    .platform-selectbtn {
+                        table {
+                            width: 120px;
+                            margin: -5px auto 5px;
+                        }
+                    }
+
+                    .regionbtn {
+                        width: 200px;
+                        margin: 0 auto;
+
+                        table  {
+                            margin-top: 10px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .permanent-pagebtn {
+                        .permanent-link {
+                            margin: 5px auto 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-partner-page {
+            .main-partner-text {
+                .main-partners-head {
+                    text-align: center;
+                }
+
+                .main-partners {
+                    padding: 10px 25px;
+
+                    .main-partner-name {
+                        ul {
+                            li {
+                                display: block;
+
+                                p {
+                                    text-align: center;
+                                    padding-bottom: 5px;
+                                }
+
+                                .main-partner-icon {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            min-height: 70px;
+            height: auto;
+
+            .footer-ul {
+                .footer-li {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .footer-content {
+                .trademark {
+                    width: 100%;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+
+    .def-stats-4col {
+        .def-header {
+            font-size: 14px;
+        }
+
+        .def-stat-4col {
+            width: 50%;
+            height: 50px;
+
+            .def-stat-name {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .def-stat-value {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .def-stats-1col {
+        .def-header {
+            font-size: 14px;
+        }
+
+        .def-stat-1col {
+            width: 100%;
+            height: 50px;
+
+            .def-stat-name {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .def-stat-value {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .def-stats-2col {
+        .def-header {
+            font-size: 14px;
+        }
+
+        .def-stat-2col {
+            width: 50%;
+            height: 60px;
+
+            .def-stat-name {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .def-stat-value {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .def-stats-5col {
+        .def-header {
+            font-size: 14px;
+        }
+
+        .def-stat-5col {
+            width: 20%;
+            height: 60px;
+
+            .def-stat-name {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .def-stat-value {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    body {
+        .main-index-page {
+            .rainbowsix-logo {
+                margin-top: 5vh;
+                margin-bottom: 0;
+                background-size: 300px;
+            }
+
+            .content {
+                .container-center {
+                    .searchbox {
+                        form {
+                            table {
+                                .search-player-td {
+                                    .search-player-div {
+                                        .search-player-input {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .container-right {
+                    .content-container-right {
+                        p {
+                            font-size: 11px;
+                            line-height: 1rem;
+                        }
+
+                        .social {
+                            padding-bottom: 5px;
+                            padding-top: 10px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-player-page {
+            .player-showcase {
+                .left-content {
+                    .profile-pic-div {
+                        margin: auto 3%;
+                    }
+
+                    .profile {
+                        .username {
+                            h1 {
+                                font-size: 18px;
+
+                                .usertag-developer {
+                                    line-height: 13px;
+                                }
+
+                                .usertag-supporter {
+                                    line-height: 13px;
+                                }
+                            }
+                        }
+
+                        .playerid {
+                            p {
+                                font-size: 11px;
+                            }
+
+                            button {
+                                .copy-btn {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-content {
+                    margin: 15px 10px;
+
+                    .playerbar-div {
+                        .hackerprob-div {
+                            .hackerbar-p {
+                                font-size: 10px;
+                            }
+                        }
+
+                        .lootboxprob-div {
+                            .lootboxprob-p {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .basic-stats {
+                        margin: 3px;
+
+                        .level-div,
+                        .time-played-div,
+                        .current-mmr-div {
+                            font-size: 10px;
+
+                            .current-mmr,
+                            .time-played,
+                            .level {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

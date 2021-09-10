@@ -1,0 +1,30 @@
+<!doctype html><html lang=en dir=ltr><meta charset=UTF-8><meta name=author content="DS-Cloav, DS-Jocular"><link rel=preload href=../css/main.css as=style><link rel=stylesheet href=../css/main.css><title>StatsDB - Statistics page</title><header id=header class="app-header md-whiteframe-3dp"><img class=header-img src=../../img/header_icon.png><h1>StatsDB</h1><button class="icon window-control window-control-settings window-control-close" id=closeWindowButton><svg><use xlink:href=/img/header_icons.svg#window-control_close /></svg></button></header><main id=statistics class=main-container><div class=left-body id=gameListContainer><div id=dateSelector><div class="custom-select settingOptions" id=setMonth><div class=custom-select__trigger><span>January</span><div class=arrow></div></div><div class=custom-options><span class=custom-option settingmode=month value=0>January</span> <span class=custom-option settingmode=month value=1>February</span> <span class=custom-option settingmode=month value=2>March</span> <span class=custom-option settingmode=month value=3>April</span> <span class=custom-option settingmode=month value=4>May</span> <span class=custom-option settingmode=month value=5>June</span> <span class=custom-option settingmode=month value=6>July</span> <span class=custom-option settingmode=month value=7>August</span> <span class=custom-option settingmode=month value=8>September</span> <span class=custom-option settingmode=month value=9>October</span> <span class=custom-option settingmode=month value=10>November</span> <span class=custom-option settingmode=month value=11>December</span></div></div><div class="custom-select settingOptions" id=setYear><div class=custom-select__trigger><span>2021</span><div class=arrow></div></div><div class=custom-options></div></div></div><div id=gameList></div><div id=loadMore class=md-whiteframe-1dp></div></div><div id=gameHistory-right class=right-body><div class=detailed-left-body><div id=scoreboard><div id=blue-table class="table md-whiteframe-1dp"><div id=blue-header class=header><div class=th-rank></div><div class=th-username>Username</div><div class=th-country>Country</div><div class=th-kills>Kills</div><div class=th-deaths>Deaths</div><div class=th-kd>K/D</div><div class=th-kpr>KPR</div><div class=th-score>Score</div></div><div id=blue-player-table class=player-table></div></div><div id=orange-table class="table md-whiteframe-1dp"><div id=orange-header class=header><div class=th-rank></div><div class=th-username>Username</div><div class=th-country>Country</div><div class=th-kills>Kills</div><div class=th-deaths>Deaths</div><div class=th-kd>K/D</div><div class=th-kpr>KPR</div><div class=th-score>Score</div></div><div id=orange-player-table class=player-table></div></div></div><div id=bottom-row class=md-whiteframe-1dp><div id=coming-soon><h1>COMING SOON</h1><p>personal detailed stats of the match</div><div id=ad-400x300 class="ad-400x300 ad-lobby"></div></div></div><div id=right-roundstats class="detailed-right-body md-whiteframe-1dp"></div></div></main><script src=https://content.overwolf.com/libs/ads/latest/owads.min.js async onload=onOwAdReady()></script><script>function onOwAdReady() {
+                setTimeout(() => {
+                    if (!owAd) {
+                        console.error("Couldn't load owads.min.js!");
+                    }
+
+                    overwolf.windows.onStateChanged.removeListener(onWindowStateChanged);
+                    overwolf.windows.onStateChanged.addListener(onWindowStateChanged);
+                }, 500);
+
+                const owAd = new OwAd(document.getElementById("ad-400x300"), {
+                    size: {
+                        width: 400,
+                        height: 300
+                    }
+                });
+
+                function onWindowStateChanged(state) {
+                    if (state && owAd) {
+                        if (state.window_state === "minimized") {
+                            owAd.removeAd();
+                        } else if (
+                            state.window_previous_state === "minimized" &&
+                            state.window_state === "normal"
+                        ) {
+                            owAd.refreshAd();
+                        }
+                    }
+                }
+            }</script><script src=../statistics/statistics.js></script>

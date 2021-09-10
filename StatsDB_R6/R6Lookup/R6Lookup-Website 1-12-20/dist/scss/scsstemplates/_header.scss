@@ -1,0 +1,194 @@
+body {
+    .header-nav {
+        background-color: $primary-color;
+
+        .main-nav {
+            max-width: 1920px;
+            width: 96%;
+            margin: 0 auto;
+            height: 60px;
+
+            .close-search-bar,
+            .search,
+            .about,
+            .search-bar {
+                font-size: 18px;
+                float: right;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: $text-color;
+                height: 60px;
+                padding: 0 12px;
+                line-height: 65px;
+                font-size: 20px;
+                transition: ease-in-out 0.1s;
+
+                &:hover {
+                    transition: ease-in-out 0.1s;
+                    background-color: lighten($color: $primary-color, $amount: 4);
+                }
+            }
+
+            .logo {
+                float: left;
+                height: 60px;
+
+                img {
+                    height: 40px;
+                    width: 186px;
+                    margin-top: 10px;
+                    user-select: none;
+                    pointer-events: none;
+                }
+            }
+
+            .close-search-bar,
+            .search,
+            .about {
+                cursor: pointer;
+                display: inline-block;
+                color: $text-color;
+                height: 60px;
+                padding: 0 8px;
+                line-height: 65px;
+                font-size: 18px;
+                width: 42px;
+                margin-left: 10px;
+
+                &:hover {
+                    transition: ease-in-out 0.1s;
+                    background-color: lighten($color: $primary-color, $amount: 4);
+                }
+
+                svg {
+                    padding-top: 17px;
+                    width: 100%;
+                    user-select: none;
+                    pointer-events: none;
+                }
+            }
+
+            .login {
+                float: right;
+                background: none;
+                border: none;
+                padding: 0 8px;
+                height: 60px;
+                cursor: pointer;
+
+                .login-text {
+                    padding: 5px 12px;
+                    color: $primary-color;
+                    background: $text-color;
+                    border-radius: 8px;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    transition: ease-in-out 0.1s;
+                    background-color: lighten($color: $primary-color, $amount: 4);
+                }
+            }
+
+            .about {
+                margin: 0;
+
+                a {
+                    padding: 0;
+
+                    svg {
+                        padding-top: 17px;
+                        width: 100%;
+                        user-select: none;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .hide-search-bar {
+                display: none;
+            }
+
+            .search-bar {
+                form {
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+
+                        .platformbox {
+                            height: 60px;
+                            width: 36px;
+                            text-align: center;
+                            color: $lighter-color;
+
+                            .radio {
+                                display: inline-block;
+                                cursor: pointer;
+                                width: 36px;
+                                height: 36px;
+                                margin-left: 7px;
+
+                                input {
+                                    display: none;
+                                    transition: ease-in-out 0.1s;
+
+                                    &:checked + .uplay-div {
+                                        transition: ease-in-out 0.1s;
+                                        background-color: $windows-color;
+                                        box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+                                        color: $text-color;
+                                    }
+
+                                    &:checked + .psn-div {
+                                        transition: ease-in-out 0.1s;
+                                        background-color: $psn-color;
+                                        box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+                                        color: $text-color;
+                                    }
+
+                                    &:checked + .xbl-div {
+                                        transition: ease-in-out 0.1s;
+                                        background-color: $xbl-color;
+                                        box-shadow: inset 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+                                        color: $text-color;
+                                    }
+                                }
+
+                                .uplay-div,
+                                .psn-div,
+                                .xbl-div {
+                                    height: 36px;
+                                    border-radius: 5px;
+
+                                    svg {
+                                        height: 22px;
+                                        width: 22px;
+                                        margin-top: 7px;
+                                    }
+
+                                    &:hover {
+                                        transition: ease-in-out 0.1s;
+                                        background-color: lighten($color: $primary-color, $amount: 4);
+                                    }
+                                }
+                            }
+                        }
+
+                        .search-player-input {
+                            background-color: transparent;
+                            width: 210px;
+                            border: none;
+                            height: 40px;
+                            padding: 0 10px 0 16px;
+                            color: $text-color;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

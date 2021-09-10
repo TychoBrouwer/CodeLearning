@@ -1,0 +1,25 @@
+$primary-color: #101010;
+$darker-color: #181818;
+$darkest-color: #121212;
+$lighter-color: #666;
+$secundary-color: #ff8800;
+$text-color: #d3d3d3;
+$darker-text-color: #A9A9A9;
+$background-color: #1c1c1c;
+$windows-color: #00a2ed;
+$psn-color: #006fcd;
+$xbl-color: #0e7a0d;
+$error-color: #d8000c;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('https://www.r6lookup.com/dist/fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+       url('https://www.r6lookup.com/dist/fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+.hide {
+	display: none;
+}
