@@ -8,6 +8,8 @@
 
 html {
   background: #121212;
+  font-weight: bolder;
+  color: #fff;
 }
 
 #index {
@@ -22,8 +24,6 @@ html {
   
     #calcButtons {
       display: flex;
-      font-weight: bolder;
-      color: #fff;
 
       .calcButtons {
         height: 7vh;
