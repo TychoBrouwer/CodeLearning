@@ -8,14 +8,29 @@
 
     <link rel="preload" href="../css/main.css" as="style">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <script async src="index.js"></script>
+    <script async src="./load-mathjax.js"></script>
   </head>
   <body id="index">
     <div id="calc">
       <div id="calcInput">
-        <div id="equation"></div>
+        <div id="calculation"></div>
         <div id="currentNumber"></div>
       </div>
       <div id="calcButtons">
+        <div id="hardKeys">
+          <div class="calcButtons operatorButtons" dataOperator=""></div>
+          <div class="calcButtons operatorButtons" dataOperator=""></div>
+          <div class="calcButtons operatorButtons" dataOperator=""></div>
+          <div class="calcButtons operatorButtons" dataOperator=""></div>
+          <div class="calcButtons operatorButtons" dataOperator=""></div>
+          <div class="calcButtons operatorButtons" dataOperator="(">(</div>
+          <div class="calcButtons operatorButtons" dataOperator=")">)</div>
+          <div class="calcButtons operatorButtons" dataOperator="sin">sin</div>
+          <div class="calcButtons operatorButtons" dataOperator="cos">cos</div>
+          <div class="calcButtons operatorButtons" dataOperator="tan">tan</div>
+        </div>
         <div id="calcNumbers">
           <div class="calcButtons calcNumberButtons" id="number7" dataNumber="7">7</div>
           <div class="calcButtons calcNumberButtons" id="number8" dataNumber="8">8</div>
@@ -34,7 +49,7 @@
           <div class="calcButtons operatorButtons special" dataOperator="delete">DEL</div>
           <div class="calcButtons operatorButtons special" dataOperator="cancel">AC</div>
           <div class="calcButtons operatorButtons" dataOperator="*">X</div>
-          <div class="calcButtons operatorButtons" dataOperator="/">/</div>
+          <div class="calcButtons operatorButtons" dataOperator="/(">/</div>
           <div class="calcButtons operatorButtons" dataOperator="+">+</div>
           <div class="calcButtons operatorButtons" dataOperator="-">-</div>
           <div class="calcButtons operatorButtons" dataOperator="ans">Ans</div>
@@ -47,6 +62,5 @@
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>. -->
 
-    <script src="index.js"></script>
   </body>
 </html>

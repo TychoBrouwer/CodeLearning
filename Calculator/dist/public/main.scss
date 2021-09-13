@@ -24,6 +24,7 @@ html {
   
     #calcButtons {
       display: flex;
+      flex-wrap: wrap;
 
       .calcButtons {
         height: 7vh;
@@ -38,6 +39,12 @@ html {
           transition: ease-in-out 0.1s;
           background: #191919;
         }
+      }
+
+      #hardKeys {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
       }
 
       #calcNumbers {
