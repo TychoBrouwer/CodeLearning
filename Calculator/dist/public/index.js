@@ -60,10 +60,12 @@ operatorButtons.forEach(element => {
       const calc = buildCalc()
       const eval = evil(calc[0])
 
-      printAnswer(eval, calc[1])
-      savedAnswers.push([calc, eval])
-
-      console.log(savedAnswers)
+      if (eval) {
+        printAnswer(eval, calc[1])
+        savedAnswers.push([calc, eval])
+  
+        console.log(savedAnswers)  
+      }
 
       numbers = []
       operators = []
