@@ -1,0 +1,1 @@
+*{margin:0px;padding:0px;box-sizing:border-box;user-select:none;font-family:Arial, sans-serif}html{background:#121212;font-weight:bolder;color:#fff}#index{height:100vh}#index #game{display:grid;height:100vh;width:100vh;border:#777 2px solid}#index #game .grid-item{border:#777 0.3px solid}
